@@ -51,8 +51,13 @@ class Home extends Component{
 
                 <div className='row '>
                     <div className='container'>
-                        <div>
-
+                        <div className='col-3 piccol1'>
+                            <img  src="assets/images/home2.png" className='homepic1'></img>
+                            
+                        </div>
+                        <div className='col-3 piccol1'>
+                            <img  src="assets/images/home3.png" className='homepic1'></img>
+                            
                         </div>
                     </div>
                 </div>
