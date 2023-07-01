@@ -1,6 +1,7 @@
 import React, { Component, createRef  } from 'react';
 import axios from 'axios';
-import '../assets/css/menu.css';
+import '../../assets/css/menu.css';
+import { Link } from "react-router-dom";
 
 class Menu extends Component{
 
@@ -98,7 +99,7 @@ class Menu extends Component{
                                 <div className="card-body">
                                     <h5 className="card-title mealname">Meal Name</h5>
                                     <p className="card-text mealdesc">This meal is for old people. Get them green old hag. Veggies and shit go brrr.</p>
-                                    <button className="orderbtnmenu">Order</button>
+                                    <Link to="/menudetails"><button className="orderbtnmenu">Order</button></Link>
                                 </div>
                             </div>
                             <div className="card  menu-card shadow">
@@ -106,7 +107,8 @@ class Menu extends Component{
                                 <div className="card-body">
                                     <h5 className="card-title mealname">Meal Name</h5>
                                     <p className="card-text  mealdesc">This meal is for old people. Get them green old hag. Veggies and shit go brrr.</p>
-                                    <button className="orderbtnmenu">Order</button>
+                                    <Link to="/menudetails"><button className="orderbtnmenu">Order</button></Link>
+
                                 </div>
                             </div>
                             <div className="card  menu-card shadow">
@@ -114,7 +116,8 @@ class Menu extends Component{
                                 <div className="card-body menubody">
                                     <h5 className="card-title mealname">Meal Name</h5>
                                     <p className="card-text mealdesc">This meal is for old people. Get them green old hag. Veggies and shit go brrr.</p>
-                                    <button className="orderbtnmenu">Order</button>
+                                    <Link to="/menudetails"><button className="orderbtnmenu">Order</button></Link>
+
                                 </div>
                             </div>
                             <div className="card  menu-card shadow">
@@ -122,7 +125,8 @@ class Menu extends Component{
                                 <div className="card-body menubody">
                                     <h5 className="card-title mealname">Meal Name</h5>
                                     <p className="card-text mealdesc">This meal is for old people. Get them green old hag. Veggies and shit go brrr.</p>
-                                    <button className="orderbtnmenu">Order</button>
+                                    <Link to="/menudetails"><button className="orderbtnmenu">Order</button></Link>
+
                                 </div>
                             </div>
                         </div>

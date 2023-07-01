@@ -46,7 +46,9 @@
     /* border: 1px solid  yellow; */
 
 }
-.tabcontent {
+*{
+  color:black;
+}tent {
   display: none;
 }
 

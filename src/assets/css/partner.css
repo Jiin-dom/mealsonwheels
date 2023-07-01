@@ -18,7 +18,9 @@ src: url(/src/assets/fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf);
 font-family: SatoshiBlack;
 src: url(/src/assets/fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf);
 }
-
+*{
+    color:black;
+  }
 .partnerBody{
     background-color: #f0f0f0;
 }
@@ -83,4 +85,13 @@ src: url(/src/assets/fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf);
     font-size: 100px;
     margin: 0;
     color: #F24C3D;
+}
+
+
+
+
+
+.confirmdeliverybtn{
+    background-color: #F24C3D;
+    color: #0000;
 }
