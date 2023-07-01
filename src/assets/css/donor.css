@@ -1,7 +1,5 @@
 
-*{
-	color:black;
-  }
+
 
 
 .donation-container {
@@ -345,33 +343,14 @@
   }
 
 
-  @media only screen and (max-width: 300px) {
+  /* @media only screen and (max-width: 300px) {
 	h1 {
 	  font-size:20px;
 	}
-  }
+  } */
 
 
 
-img {
-	-webkit-user-drag: none;
-	-khtml-user-drag: none;
-	-moz-user-drag: none;
-	-o-user-drag: none;
-	user-drag: none;
-  }
-  body{background-repeat: no-repeat;
-  text-align: justify;	}
-  h2,h3,h4,h5,h6 {font-family: SatoshiReg, sans-serif}
-  h1 {font-family: 'Inter', sans-serif;font-size:10vh}
-  .w3-bar,h1,button {font-family: "SatoshiReg", sans-serif}
-  .fa-anchor,.fa-coffee {font-size:200px}
-  
-  
-  p, a, h1, h2,h3,h4,h5,h6  {
-	z-index:2;
-  }
-  
   .donatebutton {
 
 	top: 1000px;

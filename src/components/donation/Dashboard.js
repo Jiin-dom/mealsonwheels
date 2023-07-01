@@ -21,9 +21,9 @@ const Dashboard = () => {
         
 
 
-        <h1 style={{ fontFamily: "'Inter', sans-serif", fontSize: "50px" }}>MAKE A DIFFERENCE!</h1>
+        <h1 style={{ fontFamily: "'SatoshiBold', sans-serif", fontSize: "50px" }}>MAKE A DIFFERENCE!</h1>
         <p className="w3-xlarge">Your Donation Supports Nutritious Meals<br /> for Vulnerable Adults!</p>
-        <h1 style={{ fontFamily: "'Inter', sans-serif", fontSize: "150px", lineHeight: "1.8", marginBottom: "-50px" }}>$ 300</h1>
+        <h1 style={{ fontFamily: "'SatoshiBlck', sans-serif", fontSize: "150px", lineHeight: "1.8", marginBottom: "-50px" }}>$ 300</h1>
         <p className="w3-xlarge" style={{ marginBottom: "150px", lineHeight: "0px" }}>Total Donated</p>
       </header>
 
