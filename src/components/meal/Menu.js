@@ -40,6 +40,7 @@ class Menu extends Component{
         cityElement.style.display = 'block';
         evt.currentTarget.classList.add('active');
       }
+
       
     render() {
         return (

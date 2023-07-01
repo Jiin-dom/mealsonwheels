@@ -21,22 +21,22 @@ const Dashboard = () => {
         
 
 
-        <h1 style={{ fontFamily: "'SatoshiBold', sans-serif", fontSize: "50px" }}>MAKE A DIFFERENCE!</h1>
-        <p className="w3-xlarge">Your Donation Supports Nutritious Meals<br /> for Vulnerable Adults!</p>
-        <h1 style={{ fontFamily: "'SatoshiBlck', sans-serif", fontSize: "150px", lineHeight: "1.8", marginBottom: "-50px" }}>$ 300</h1>
-        <p className="w3-xlarge" style={{ marginBottom: "150px", lineHeight: "0px" }}>Total Donated</p>
+        <h1  className='makeadiff'>MAKE A DIFFERENCE!</h1>
+        <p className="w3-xlarge yourdonation">Your Donation Supports Nutritious Meals<br /> for Vulnerable Adults!</p>
+        <h1 className='donationcount'>$ 300</h1>
+        <p className="w3-xlarge totaldonated" style={{ marginBottom: "150px", lineHeight: "0px" }}>Raised Funds</p>
       </header>
 
       <img className="image2" src="https://i.imgur.com/vl72IHJ.png" alt="" />
 
-      <a href="/Donate"><button className="donatebutton" style={{ border: "none", outline: "none" }}><b>DONATE</b></button></a>
+      <a href="/Donate"><button className="donatebutton" style={{ border: "none", outline: "none" }}>DONATE</button></a>
 
       {/* First Grid */}
       <div style={{ paddingTop: "400px", textAlign: "justify"}} className="w3-row-padding w3-container">
         <div className="w3-content" >
           <div className="w3-twothird" style={{}}>
-              <h1>About Us</h1>
-            <p className="w3-text-grey">At 'Meals on Wheels', our mission is to ensure that no one in our community goes hungry or malnourished. We are driven by the commitment to provide nutritious meals and support to those in need. Our dedicated team of compassionate volunteers and valuable partners work tirelessly to make a positive impact on the lives of individuals and families facing food insecurity.
+              <h1 className='donateAboutUs'>About Us</h1>
+            <p className="w3-text-grey donateAboutUstext">At 'Meals on Wheels', our mission is to ensure that no one in our community goes hungry or malnourished. We are driven by the commitment to provide nutritious meals and support to those in need. Our dedicated team of compassionate volunteers and valuable partners work tirelessly to make a positive impact on the lives of individuals and families facing food insecurity.
 </p>
           </div>
           <div className="w3-third w3-center">
@@ -52,17 +52,17 @@ const Dashboard = () => {
             <img className="" src="https://cdn-icons-png.flaticon.com/512/2904/2904845.png" alt="" width="50%"/>
           </div>
           <div className="w3-twothird">
-            <h1>Where does my donation go?</h1> <p className="w3-text-grey">At 'Meals on Wheels', we are transparent about where donations go and ensure that they are utilized efficiently and effectively to support our mission of combating hunger and malnutrition in the community. </p>
+            <h1 className='donateAboutUs'>Where does my donation go?</h1> <p className="w3-text-grey donateAboutUstext">At 'Meals on Wheels', we are transparent about where donations go and ensure that they are utilized efficiently and effectively to support our mission of combating hunger and malnutrition in the community. </p>
           </div>
         </div>
       </div>
 
-      <br/>
+      {/* <br/>
       <br/>
 
       <div className="w3-container w3-black w3-center w3-opacity w3-padding-64">
         <h1 className="w3-margin w3-xlarge">Quote of the day: live life</h1>
-      </div>
+      </div> */}
 
     </>
   );

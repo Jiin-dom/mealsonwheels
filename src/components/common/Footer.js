@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 // import { AuthContext } from "./AuthContext";
-import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/css/bootstrap.css";
 import "../../assets/css/home.css";
 
 class Footer extends React.Component {

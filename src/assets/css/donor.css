@@ -553,6 +553,30 @@ outline: none;
 
 
 
+	  .makeadiff{
+		font-family: SatoshiBold;
+		font-size: 50px;
+	  }
+	  .donationcount{
+		line-height: 1.8 ;
+		margin-bottom: -50px;
+		font-size: 150px;
+		font-family: SatoshiBlack;
+	  }
+	  .yourdonation, .totaldonated{
+		font-family: SatoshiReg;
+	  }
+.donatebutton{
+	font-family: SatoshiBold;
+	color: #000;
+}
+.donateAboutUs{
+	font-family: SatoshiBold;
+}
+.donateAboutUstext{
+	font-family: SatoshiReg;
+	font-size: 1.2rem;
+}
 
 
 

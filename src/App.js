@@ -15,7 +15,7 @@ import Search from './components/common/Search';
 import TC from './components/common/Terms&Conditions';
 import Admin from './components/users/Admin'
 import Header from './components/common/Header';
-import Footer from './components/common/Header'
+import Footer from './components/common/Footer'
 import { Link } from "react-router-dom";
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -47,9 +47,10 @@ function App() {
         <Route path="/location" element={<Location/>}></Route>
         <Route path="/tc" element={<TC/>}></Route>
         <Route path="/admin" element={<Admin/>}></Route>
+        
       </Routes>
 
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
      
 
 
