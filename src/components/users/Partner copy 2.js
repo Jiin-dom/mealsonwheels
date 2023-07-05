@@ -15,32 +15,43 @@ class Partner extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            riders: [],
-            loading: true
+            rider: []
         };
     }
 
-    componentDidMount() {
+    componentDidMount(){
         this.fetchRiders();
     }
 
-    fetchRiders() {
-        axios.get('/showRiders') // Adjust the URL based on your backend API endpoint
-            .then(response => {
-                this.setState({ riders: response.data, loading: false });
+
+
+    fetchRiders = () => {
+        axios
+            .get('/showRiders')
+            .then((response) => {
+                this.setState({
+                    rider: response.data,
+                });
             })
-            .catch(error => {
-                console.error('Error fetching riders:', error);
-                this.setState({ loading: false });
+            .catch((error) => {
+                console.log(error);
             });
-    }
+    };
+
+
 
     render() {
-        const { riders, loading } = this.state;
 
-        if (loading) {
-            return <div>Loading riders...</div>;
-        }
+        const ridersVar = this.state.rider;
+        const riderList = ridersVar.map((rider, index) => (
+            <div className='each-rider' key={index}>
+                <img src="assets/images/rider-logo.png" alt="..." className='rider-logo' style={{ width: "50px", height: "50px" }}></img>
+                <div className='rider-details'>
+                    <h5 className='rider-name'>{rider.firstName} {rider.lastName}</h5>
+                    <p className='rider-loc'>{rider.address}</p>
+                </div>
+            </div>
+        ));
 
         return (
             <div id="page-top">
@@ -120,7 +131,7 @@ class Partner extends Component {
 
                                 <div class="d-sm-flex align-items-center justify-content-left mb-4 mt-4">
                                     <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-
+                                    
                                 </div>
 
                                 <div class="row">
@@ -392,17 +403,50 @@ class Partner extends Component {
 
                                             <div class="card-body card-bodyrider">
                                                 <div class="chart-pie pb-4">
-                                                    {riders.map(rider => (
-
-                                                        <div className='each-rider' key={rider.id}>
-                                                            <img src="assets/images/rider-logo.png" alt="..." className='rider-logo' style={{ width: "50px", height: "50px" }}></img>
-                                                            <div className='rider-details'>
-                                                                <h5 className='rider-name'>{rider.firstName} {rider.lastName}</h5>
-                                                                <p className='rider-loc'>{rider.address}</p>
-                                                            </div>
+                                                    <div className='each-rider'>
+                                                        <img src="assets/images/rider-logo.png" alt="..." className='rider-logo' style={{ width: "50px", height: "50px" }}></img>
+                                                        <div className='rider-details'>
+                                                            <h5 className='rider-name'>Rider name</h5>
+                                                            <p className='rider-loc'>Rider Location or Address</p>
                                                         </div>
+                                                    </div>
+                                                    {riderList}
+                                                    <div className='each-rider'>
+                                                        <img src="assets/images/rider-logo.png" alt="..." className='rider-logo' style={{ width: "50px", height: "50px" }}></img>
+                                                        <div className='rider-details'>
+                                                            <h5 className='rider-name'>Rider name</h5>
+                                                            <p className='rider-loc'>Rider Location or Address</p>
+                                                        </div>
+                                                    </div>
+                                                    <div className='each-rider'>
+                                                        <img src="assets/images/rider-logo.png" alt="..." className='rider-logo' style={{ width: "50px", height: "50px" }}></img>
+                                                        <div className='rider-details'>
+                                                            <h5 className='rider-name'>Rider name</h5>
+                                                            <p className='rider-loc'>Rider Location or Address</p>
+                                                        </div>
+                                                    </div>
+                                                    <div className='each-rider'>
+                                                        <img src="assets/images/rider-logo.png" alt="..." className='rider-logo' style={{ width: "50px", height: "50px" }}></img>
+                                                        <div className='rider-details'>
+                                                            <h5 className='rider-name'>Rider name</h5>
+                                                            <p className='rider-loc'>Rider Location or Address</p>
+                                                        </div>
+                                                    </div>
+                                                    <div className='each-rider'>
+                                                        <img src="assets/images/rider-logo.png" alt="..." className='rider-logo' style={{ width: "50px", height: "50px" }}></img>
+                                                        <div className='rider-details'>
+                                                            <h5 className='rider-name'>Rider name</h5>
+                                                            <p className='rider-loc'>Rider Location or Address</p>
+                                                        </div>
+                                                    </div>
+                                                    <div className='each-rider' style={{ display: "flex", gap: "5px", alignItems: "center", justifySelf: "center", marginBottom: "5%" }}>
+                                                        <img src="assets/images/rider-logo.png" alt="..." className='rider-logo' style={{ width: "50px", height: "50px" }}></img>
+                                                        <div className='rider-details'>
+                                                            <h5 className='rider-name'>Rider name</h5>
+                                                            <p className='rider-loc'>Rider Location or Address</p>
+                                                        </div>
+                                                    </div>
 
-                                                    ))}
                                                 </div>
                                             </div>
                                         </div>
@@ -592,8 +636,9 @@ class Partner extends Component {
 
 
             </div>
-        );
+        )
     }
+
 
 }
 export default Partner;

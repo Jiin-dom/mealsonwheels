@@ -9,9 +9,6 @@ const Menu = () => {
         Plant: useRef(),
         Meat: useRef()
     };
-    const featuredbtn = useRef(null);
-    const plantbtn = useRef(null);
-    const meatbtn = useRef(null);
     const [menu, setMenu] = useState([]);
 
     useEffect(() => {
@@ -56,23 +53,10 @@ const Menu = () => {
             });
     }, []);
 
-    // const plantMenu = () =>{
-    //     axios
-    //     .get('showMenu/plant')
-    //     .then((res) => {
-    //         setMenu(res.data);
-    //     })
-    //     .catch((error) => {
-    //         console.log(error);
-    //     });
-    // };
 
 
 
-
-    const menudata = menu;
-
-    const menuResults = menudata.map((meal, key) => (
+    const menuResults = menu.map((meal, key) => (
         <div className="card menu-card shadow">
             <img src="assets/images/vegetable-stir-fry.jpg" className="card-img-top" alt="..." />
             <div className="card-body">
@@ -87,9 +71,9 @@ const Menu = () => {
     return (
         <div>
             <div className="tab">
-                <button className="tablinks featuredbtn" onClick={(evt) => openCity(evt, 'Featured')} ref={featuredbtn}>Featured </button>
-                <button className="tablinks plantbtn" onClick={(evt) => openCity(evt, 'Plant')} ref={plantbtn}>Plant-based</button>
-                <button className="tablinks meatbtn" onClick={(evt) => openCity(evt, 'Meat')} ref={meatbtn}>Meat-based</button>
+                <button className="tablinks featuredbtn" onClick={(evt) => openCity(evt, 'Featured')} ref={(node) => (this.featuredbtn = node)}>Featured </button>
+                <button className="tablinks plantbtn" onClick={(evt) => openCity(evt, 'Plant')} ref={(node) => (this.plantbtn = node)}>Plant-based</button>
+                <button className="tablinks meatbtn" onClick={(evt) => openCity(evt, 'Meat')} ref={(node) => (this.meatbtn = node)}>Meat-based</button>
             </div>
 
             <div id="Featured" className="tabcontent" ref={tabRefs['Featured']}>
@@ -117,12 +101,10 @@ const Menu = () => {
                             <h1 className="featuredsmall">Frozen Chicken Enchiladas</h1>
                         </div>
                     </div>
-
-                    {menuResults}
                 </div>
             </div>
 
-            {/* <div id="Plant" className="tabcontent" ref={tabRefs['Plant']}>
+            <div id="Plant" className="tabcontent" ref={tabRefs['Plant']}>
                 <div className="container plantcont">
                     <div className="filterdiv">
                         <h3 className="featuredhead">Plant-Based Meals</h3>
@@ -160,7 +142,7 @@ const Menu = () => {
                         {menuResults}
                     </div>
                 </div>
-            </div> */}
+            </div>
         </div>
     );
 };

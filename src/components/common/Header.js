@@ -8,7 +8,7 @@ class Header extends React.Component {
         <nav className="navbar navbar-expand-lg fixed-top text-uppercase custom-font-header " id="mainNav">
           <div className="container">
             <Link className="navbar-brand d-flex align-items-center" to="/">
-              <img src="assets/images/merryOnwheels (2).png" alt="Know Your Neighborhood Logo" className="me-2" style={{ width: '150px', height: 'auto' }}></img>
+              <img src="../../assets/images/merryOnwheels (2).png" alt="Know Your Neighborhood Logo" className="me-2" style={{ width: '150px', height: 'auto' }}></img>
             </Link>
             <button
               className="navbar-toggler text-uppercase font-weight-bold bg-white text-white rounded"
@@ -55,15 +55,15 @@ class Header extends React.Component {
                     </Link>
                   </li>
                   <li className="nav-item mx-0 mx-lg-1">
-                    <Link to="/tc" className="nav-link py-3 px-0 px-lg-3 rounded text-white">
+                    <Link to="/partners" className="nav-link py-3 px-0 px-lg-3 rounded text-white">
                       {/* <i className="fa fa-users" aria-hidden="true"></i> Donate */}
-                      TC
+                      Partners
                     </Link>
                   </li>
                   <li className="nav-item mx-0 mx-lg-1">
-                    <Link to="/admin" className="nav-link py-3 px-0 px-lg-3 rounded text-white">
+                    <Link to="/add-meal" className="nav-link py-3 px-0 px-lg-3 rounded text-white">
                       {/* <i className="fa fa-users" aria-hidden="true"></i> Donate */}
-                     Admin
+                     Add Meal
                     </Link>
                   </li>
                   <li className="nav-item mx-0 mx-lg-1">
